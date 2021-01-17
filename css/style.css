@@ -7,7 +7,7 @@ h1{
 }
 
 p {
-  background-color: blue;
+  background-color: FCBCB7;
   border: 2px solid black;
   height: 150px;
   margin-right: 10px;
@@ -36,7 +36,7 @@ p {
 }
 #p2 {
   background-color:pink ;
-  color: white;
+  color: black;
   position: absolute;
   top: 0;
   right: 0;
