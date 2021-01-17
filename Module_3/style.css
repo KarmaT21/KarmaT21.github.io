@@ -43,3 +43,7 @@ h2{
   text-transform: uppercase;
  text-shadow: 1px 1px 1px #222;
 }
+.navbar-brand a:hover, .navbar-brand a:focus {
+ text-decoration: none;
+ 	
+}
