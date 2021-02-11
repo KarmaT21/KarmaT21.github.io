@@ -1,37 +1,108 @@
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="css/style.css">
-	<title>Responsive Layout</title>
-
-
-
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karma Tshering</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
 <body>
-	<div class="row">
-	<h1>Our Menu</h1>
-  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-    <p>Karma Tshering is learning wed designing through Coursera and the course is very lively. He wishes to work on web designing.</p>
-  	<p id="p1">Phakpasha</p>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
 
-  	</div>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Karma Tshering</h1></a>
+            <p>
+              <img src="images/star-k-logo.png" alt="certification">
+              <span>Certified</span>
+            </p>
+          </div>
 
-  
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:975-02326575">
+                <span>975-02326575</span></a><div>Contact us for Delivery</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
 
-  <div class="col-lg-4 col-md-6 col-sm-12" id="container"><p>Karma Tshering is learning wed designing through Coursera and the course is very lively. He wishes to work on web designing.</p>
-
-  	<p id="p2">Wagasha</p>
-
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:975-02326575">
+    <span class="glyphicon glyphicon-earphone"></span>
+    975-02326575
+    </a>
   </div>
+  <div id="xs-deliver" class="text-center visible-xs">Contact us for Delivery</div>
 
-  <div class="col-lg-4 col-md-12 col-sm-12" id="container"><p>Karma Tshering is learning wed designing through Coursera and the course is very lively. He wishes to work on web designing.</p>
+  <div id="main-content" class="container"></div>
 
-  	<p  id="p3">Karma</p>
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          Thpu-P/ling_Wangbama Road<br>
+          Genekha, Wangbama
+          <p>* Delivery area within 1km, with minimum order of Nu.200 plus Nu.100 charge for all deliveries.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Bhutanese restaurant to dine with your loved ones. Always visit us"</p>
+          <p>"Wonderful food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; </div>
+    </div>
+  </footer>
 
-  </div>
-
-	</div>	
-
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+   <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
